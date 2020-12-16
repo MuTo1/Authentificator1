@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/SignInEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/SignInPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/SignInButton"
+            android:layout_width="match_parent"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+            android:text="Sign In" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_weight="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginEnd="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTER" />
+
+            <Button
+                android:id="@+id/RecoveryButton"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Recovery" />
+        </TableRow>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
